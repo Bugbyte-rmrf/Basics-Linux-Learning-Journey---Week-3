@@ -172,17 +172,19 @@ I learned that the output of `ls` can be sorted using different options:
 
 <img width="615" height="222" alt="Screenshot from 2026-10-05 21-14-13" src="https://github.com/user-attachments/assets/3dc83ec6-c20c-429a-8efb-7a30bb4aa97a" />
 
-`-t` sorts according to modification time.
+`-t` .It sorts according to modification time listing most recently modified files first. For more detailed modification time information, use the `--full-time` option to display the complete timestamp (including hours, minutes, seconds).
 
-`-r` reverses the sorting order.
+<img width="619" height="329" alt="Screenshot from 2026-10-05 21-33-17" src="https://github.com/user-attachments/assets/c12c6ab2-5059-403b-b27e-407317427d2f" />
 
-### Evidence
+`-r` . It reverses the sorting order. When combined with `-S`, the command will sort files by size, smallest to largest.
 
-**Screenshot 5 – Sorting listings**
+<img width="620" height="220" alt="Screenshot from 2026-10-05 21-40-58" src="https://github.com/user-attachments/assets/1d034b34-50ae-4dd1-ba64-ee03a903dcde" />
 
-*[Insert the sorting screenshot from the presentation here.]*
+When the `r` command uses `-t options` ,it list files by modification date, oldest to newest.
 
-### What I Learned
+<img width="644" height="235" alt="Screenshot from 2026-10-05 21-42-29" src="https://github.com/user-attachments/assets/f68ca555-aa2c-4897-8c5e-b511ea07aafa" />
+
+### What I Learned - Sorting Directory Listings
 
 I learned that sorting options are useful when I need to find particular files quickly, such as the largest files or the files that were modified most recently.
 
@@ -192,7 +194,7 @@ I learned that sorting options are useful when I need to find particular files q
 
 I learned about globbing, which allows patterns to be used when specifying filenames.
 
-The presentation covered the following wildcard characters:
+The following wildcard characters:
 
 ```text
 *
