@@ -66,27 +66,36 @@ cd
 
 The `cd` command is used to change directories. When used without an argument, it takes me back to my home directory.
 
-### What I Learned
+# What I Learned
 
 I learned that navigation in Linux depends on understanding where I currently am in the filesystem. `pwd` helps me confirm my location, `ls` lets me see what is available, and `cd` allows me to move between locations.
 
-*<img width="493" height="49" alt="ls-l" src="https://github.com/user-attachments/assets/b24266ad-6f5f-4ebd-8be4-1b72a2967f1b" />*
+If the user tries to change to a directory that does not exist, the command returns an error message
+
+# Evidence - Terminal Navigation
+
+* <img width="613" height="110" alt="Screenshot from 2026-10-05 18-30-29" src="https://github.com/user-attachments/assets/1a15decd-9148-4138-b4a6-b3190f537e83" />* 
+
+---
 
 # 3. Shortcuts
 
 I also learned the following characters: 
 
 ```text
-.
-```
-
-Represents one directory higher relative to the current directory (parent directory). 
-
-```text
 ..
 ```
 
-Regardless of which directory the user is in, it always represents the current directory. 
+Regardless of which directory the user is in, the two period .. characters always represents one directory higher relative to the current directory, sometimes referred to as the parent directory. 
+
+```text
+.
+```
+
+Regardless of which directory the user is in, the single period . character always represents the current directory.
+
+
+---
 
 # 3. Absolute and Relative Paths
 
@@ -94,13 +103,12 @@ I learned about two ways of identifying locations in the Linux filesystem.
 
 An **absolute path** specifies the complete location and starts from the root directory `/`.
 
-For example:
-
 ```text
 /home/sysadmin
 ```
 
 A **relative path** starts from my current working directory rather than from the root.
+The simplest method is to use a single relative path that covers the journey from the origin to the destination directory:
 
 ### What I Learned
 
@@ -108,11 +116,9 @@ The difference between absolute and relative paths is important because a relati
 
 This helped me understand why knowing my current directory is important when using the terminal.
 
-### Evidence
+# Evidence -  Absolute and Relative Paths
 
-**Screenshot 3 – Absolute and relative paths**
-
-*[Insert the relevant presentation screenshot here.]*
+*<img width="614" height="85" alt="Screenshot from 2026-10-05 18-44-54" src="https://github.com/user-attachments/assets/3ea00a79-144f-4d0a-b2f7-23ea5b90fc60" />*
 
 ---
 
