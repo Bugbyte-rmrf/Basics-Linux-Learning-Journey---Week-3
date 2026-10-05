@@ -46,9 +46,7 @@ The important thing I learned here was that Linux has one filesystem hierarchy s
 
 # 2. Terminal Navigation
 
-I learned the basic commands used to navigate through the Linux filesystem.
-
-### `ls`
+I learned the basic commands used to navigate through the Linux filesystem:
 
 ```bash
 ls
@@ -56,15 +54,11 @@ ls
 
 The `ls` command displays the contents of a directory.
 
-### `pwd`
-
 ```bash
 pwd
 ```
 
 The `pwd` command displays the exact path of my current working directory.
-
-### `cd`
 
 ```bash
 cd
@@ -72,31 +66,27 @@ cd
 
 The `cd` command is used to change directories. When used without an argument, it takes me back to my home directory.
 
-I also learned that:
+### What I Learned
+
+I learned that navigation in Linux depends on understanding where I currently am in the filesystem. `pwd` helps me confirm my location, `ls` lets me see what is available, and `cd` allows me to move between locations.
+
+*<img width="493" height="49" alt="ls-l" src="https://github.com/user-attachments/assets/b24266ad-6f5f-4ebd-8be4-1b72a2967f1b" />*
+
+# 3. Shortcuts
+
+I also learned the following characters: 
 
 ```text
 .
 ```
 
-represents the current directory, while:
+Represents one directory higher relative to the current directory (parent directory). 
 
 ```text
 ..
 ```
 
-represents the parent directory.
-
-### Evidence
-
-**Screenshot 2 – Terminal navigation**
-
-*[Insert the navigation screenshot from the presentation here.]*
-
-### What I Learned
-
-I learned that navigation in Linux depends on understanding where I currently am in the filesystem. `pwd` helps me confirm my location, `ls` lets me see what is available, and `cd` allows me to move between locations.
-
----
+Regardless of which directory the user is in, it always represents the current directory. 
 
 # 3. Absolute and Relative Paths
 
