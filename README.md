@@ -173,6 +173,7 @@ The `-r` option allows `rm` to remove directories and their contents recursively
 
 I learned that files and directories have different commands and options for managing them. I also learned that recursive operations need to be used carefully because they can affect everything inside a directory.
 
+
 ---
 
 # 10. Archiving and Compression
