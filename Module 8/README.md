@@ -6,7 +6,7 @@ The screenshots included in this README provide evidence of the commands I used 
 
 ---
 
-### 1. Globbing
+###1. Globbing
 
 I learned that **Glob characters** are often referred to as **wild cards**. These are symbol characters that have special meaning to the shell.
 
