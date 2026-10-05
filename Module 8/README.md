@@ -166,6 +166,8 @@ I also learned that when using `mv` command, if a destination directory is not s
 -`n` -	No Clobber: Do not overwrite a destination file's contents.
 -`v` - Verbose: Show the resulting move.
 
+---
+
 ### 6. Creating and Removing Files
 I learned that the `touch` command is used to create a file.
 
