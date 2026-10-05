@@ -29,6 +29,7 @@ The asterisk `*` represents zero or more of any character in a filename.
 
 The pattern `t*` matches any file in the /etc directory that begins with the character t followed by zero or more of any character. In other words, any files that begin with the letter t.
 
+
 ### 1.2 Question mark ?
 
 The question mark `?` represents exactly one character.
@@ -36,6 +37,7 @@ The question mark `?` represents exactly one character.
 <img width="650" height="41" alt="Screenshot from 2026-10-05 22-35-37" src="https://github.com/user-attachments/assets/a505593a-511e-4106-91f0-02d3890de1a5" />
 
 It display all of the files in the /etc directory that begin with the letter t and have exactly 7 characters after the `t` character.
+
 
 ### 1.3 Square brackets [ ]
 
@@ -55,7 +57,8 @@ Brackets also displays any file that contains at least one number:
 
 <img width="613" height="61" alt="Screenshot from 2026-10-05 22-45-04" src="https://github.com/user-attachments/assets/6cb76283-abe7-43ff-ac54-270ac7fdee01" />
 
-*The above example*: `/etc/*[0-9]*` pattern displays any file that contains at least one number:
+*The above example*: `/etc/*[0-9]*` pattern displays any file that contains at least one number
+
 
 ### 1.4 Exclamation mark !
 
@@ -84,6 +87,7 @@ The `source` is the file being copied and the `destination` specifies where the 
 
 *What it means*: Copies the /etc/hosts file to home directory. The `~` character represents home directory.
 
+
 ### 2.1 Verbose Mode 
 
 I also learned `-v` option stands for verbose. It auses the cp command to produce output if successful.
@@ -100,6 +104,7 @@ To give the new file a different name, provide the new name as part of the desti
 
 I learned that where the destination file exists, the `cp` command overwrites the existing file's contents with the contents of the source file.
 
+
 ### 3.1 Illustrated Overwritten Data
 
 <img width="611" height="118" alt="Screenshot from 2026-10-05 23-21-48" src="https://github.com/user-attachments/assets/8977245c-40bf-416a-bae5-f837f575370b" />
@@ -110,11 +115,13 @@ I learned that where the destination file exists, the `cp` command overwrites th
 - View the contents of the file using the `cat` command
 - the `cp` command destroys the original contents of the example.txt file
 
+
 ### 3.2 Results - Overwritten Data
 
 After the `cp` command is complete, the size of the file has changed and the contents are different.
 
 <img width="613" height="78" alt="Screenshot from 2026-10-05 23-29-37" src="https://github.com/user-attachments/assets/bc33f58c-1a25-4e55-9e3b-d7842a1d48df" />
+
 
 ### 3.3 Safeguards Against Overwrites
 `-i` *interactive* option, the `cp` command prompts the user before overwriting a file. The `-i` option requires you to answer y or n for every copy that could end up overwriting an existing file's contents. 
@@ -153,6 +160,7 @@ mv source destination
 
 <img width="620" height="164" alt="Screenshot from 2026-10-05 23-49-34" src="https://github.com/user-attachments/assets/515978c5-e329-44d2-9d2f-c49f99a1abed" />
 
+
 *Renaming Files* : The `mv` command rename a file. If the destination for the `mv` command is a directory, the file is moved to the directory specified. The name of the file only changes if a destination file name is also specified.
 
 <img width="620" height="164" alt="Screenshot from 2026-10-05 23-53-42" src="https://github.com/user-attachments/assets/eb828623-d5b8-4dbc-be6d-9f9ab662357d" />
@@ -160,6 +168,7 @@ mv source destination
 I also learned that when using `mv` command, if a destination directory is not specified, the file is renamed using the destination file name and remains in the source directory. 
 
 <img width="610" height="113" alt="Screenshot from 2026-10-05 23-58-08" src="https://github.com/user-attachments/assets/61a0b48f-98da-487a-b983-dc6fb6383588" />
+
 
 *Additional Move Options* : the `mv` command provides the following options:
 -`i` - Interactive: Ask if a file is to be overwritten.
