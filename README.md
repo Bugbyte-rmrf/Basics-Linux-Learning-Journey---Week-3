@@ -72,7 +72,7 @@ I learned that navigation in Linux depends on understanding where I currently am
 
 If the user tries to change to a directory that does not exist, the command returns an error message
 
-# Evidence - Terminal Navigation
+## Evidence - Terminal Navigation
 
 <img width="613" height="110" alt="Screenshot from 2026-10-05 18-30-29" src="https://github.com/user-attachments/assets/1a15decd-9148-4138-b4a6-b3190f537e83" /> 
 
