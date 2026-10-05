@@ -16,7 +16,7 @@ The screenshots included in this README provide evidence of the commands I used 
 
 ---
 
-# 1. Linux File System and Directory Structure
+## 1. Linux File System and Directory Structure
 
 I learned that Linux organizes its files in a single hierarchical filesystem. Unlike Windows, which commonly uses drive letters such as `C:` or `D:`, Linux starts from a root directory represented by `/`.
 
@@ -44,7 +44,7 @@ The important thing I learned here was that Linux has one filesystem hierarchy s
 
 ---
 
-# 2. Terminal Navigation
+## 2. Terminal Navigation
 
 I learned the basic commands used to navigate through the Linux filesystem:
 
@@ -66,7 +66,7 @@ cd
 
 The `cd` command is used to change directories. When used without an argument, it takes me back to my home directory.
 
-# What I Learned
+## What I Learned
 
 I learned that navigation in Linux depends on understanding where I currently am in the filesystem. `pwd` helps me confirm my location, `ls` lets me see what is available, and `cd` allows me to move between locations.
 
@@ -94,6 +94,9 @@ Regardless of which directory the user is in, the two period .. characters alway
 
 Regardless of which directory the user is in, the single period . character always represents the current directory.
 
+# Evidence - Shortcuts
+
+<img width="615" height="71" alt="Screenshot from 2026-10-05 20-01-13" src="https://github.com/user-attachments/assets/6e637bc7-81b2-4766-970d-44e668765ca9" />
 
 ---
 
@@ -104,11 +107,15 @@ I learned about two ways of identifying locations in the Linux filesystem.
 An **absolute path** specifies the complete location and starts from the root directory `/`.
 
 ```text
-/home/sysadmin
+cd /home/sysadmin
 ```
 
 A **relative path** starts from my current working directory rather than from the root.
-The simplest method is to use a single relative path that covers the journey from the origin to the destination directory:
+The simplest method is to use a single relative path that covers the journey from the origin to the destination directory.
+
+```text
+/home/sysadmin
+```
 
 ### What I Learned
 
@@ -124,9 +131,7 @@ This helped me understand why knowing my current directory is important when usi
 
 # 4. Listing Files and Directories
 
-The `ls` command has several options that provide different information.
-
-### `ls -a`
+The `ls` command has several options that provide different information:
 
 ```bash
 ls -a
