@@ -117,43 +117,34 @@ After the `cp` command is complete, the size of the file has changed and the con
 <img width="613" height="78" alt="Screenshot from 2026-10-05 23-29-37" src="https://github.com/user-attachments/assets/bc33f58c-1a25-4e55-9e3b-d7842a1d48df" />
 
 ### 3.3 Safeguards Against Overwrites
+`-i` *interactive* option, the `cp` command prompts the user before overwriting a file. The `-i` option requires you to answer y or n for every copy that could end up overwriting an existing file's contents. 
 
+<img width="642" height="135" alt="Screenshot from 2026-10-05 23-36-28" src="https://github.com/user-attachments/assets/9d8a3b22-0ff4-4d5c-bceb-c7304d3dba39" />
 
+To answer n to each prompt automatically, use the `-n` option. It stands for no clobber, or no overwrite.
 
-For directories:
+<img width="642" height="135" alt="Screenshot from 2026-10-05 23-36-28" src="https://github.com/user-attachments/assets/12ab5c92-e4cb-4b7e-ae3f-c8a5a1d553e1" />
 
+### 4. Copying Directories
+
+I learned that the recursive `-r` option allows the `cp` command to copy both files and directories. The structure is:
 ```bash
 cp -r source_directory destination_directory
 ```
-
-The `-r` option allows directories and their contents to be copied recursively.
-
-The presentation also covered:
-
-```text
--i
--n
-```
-
-The `-i` option prompts before overwriting, while `-n` prevents overwriting an existing destination.
-
-### Evidence
-
-**Screenshot 7 – Copying files and directories**
-
-*[Insert the relevant presentation screenshot here.]*
 
 ### What I Learned
 
 I learned how to make copies of files and directories and how options can make the operation safer by preventing accidental overwriting.
 
+I also learned that the the recursive `-r` option allows the cp command can copy the entire directory structure which could result in copying a lot of files and directories!
+
 ---
 
-### 3. Moving, Renaming, Creating and Removing Files
+### 5. Moving, Renaming, Creating and Removing Files
 
 I learned several commands for managing files.
 
-### `mv`
+### 5.1 `mv` command
 
 ```bash
 mv source destination
