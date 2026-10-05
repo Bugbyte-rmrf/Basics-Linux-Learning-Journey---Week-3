@@ -74,7 +74,7 @@ If the user tries to change to a directory that does not exist, the command retu
 
 # Evidence - Terminal Navigation
 
-* <img width="613" height="110" alt="Screenshot from 2026-10-05 18-30-29" src="https://github.com/user-attachments/assets/1a15decd-9148-4138-b4a6-b3190f537e83" />* 
+<img width="613" height="110" alt="Screenshot from 2026-10-05 18-30-29" src="https://github.com/user-attachments/assets/1a15decd-9148-4138-b4a6-b3190f537e83" /> 
 
 ---
 
