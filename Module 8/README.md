@@ -6,11 +6,13 @@ The screenshots included in this README provide evidence of the commands I used 
 
 ---
 
-### 1. Globbing and Wildcards
+### 1. Globbing
 
-I learned about globbing, which allows patterns to be used when specifying filenames.
+I learned that **Glob characters** are often referred to as **wild cards**. These are symbol characters that have special meaning to the shell.
 
-The following wildcard characters:
+Globs are powerful because they specify patterns that match filenames in a directory. So instead of manipulating a single file at a time, one can easily execute commands that affect many files. 
+
+The following are wildcard characters:
 
 ```text
 *
@@ -19,7 +21,12 @@ The following wildcard characters:
 !
 ```
 
-The asterisk `*` represents zero or more characters.
+### 1. Asterisk *
+
+The asterisk `*` represents zero or more of any character in a filename.
+
+
+
 
 The question mark `?` represents exactly one character.
 
@@ -39,7 +46,7 @@ I learned that I do not always need to specify every filename individually. Wild
 
 ---
 
-# 7. Copying Files and Directories
+### 2. Copying Files and Directories
 
 I learned how to copy files using the `cp` command.
 
@@ -86,7 +93,7 @@ I learned how to make copies of files and directories and how options can make t
 
 ---
 
-# 8. Moving, Renaming, Creating and Removing Files
+### 3. Moving, Renaming, Creating and Removing Files
 
 I learned several commands for managing files.
 
@@ -126,7 +133,7 @@ I learned that many normal file-management tasks can be performed directly from 
 
 ---
 
-# 9. Creating and Removing Directories
+### 4. Creating and Removing Directories
 
 I learned how to create and remove directories.
 
