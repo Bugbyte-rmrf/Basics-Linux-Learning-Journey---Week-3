@@ -140,25 +140,46 @@ I also learned that the the recursive `-r` option allows the cp command can copy
 
 ---
 
-### 5. Moving, Renaming, Creating and Removing Files
+### 5. Moving and Renaming Files
 
 I learned several commands for managing files.
 
-### 5.1 `mv` command
-
+*Moving Files* : The `mv` command moves a file.  The syntax is:
 ```bash
 mv source destination
 ```
 
-The `mv` command moves a file. It can also be used to rename a file.
+<img width="620" height="164" alt="Screenshot from 2026-10-05 23-49-34" src="https://github.com/user-attachments/assets/515978c5-e329-44d2-9d2f-c49f99a1abed" />
 
-### `touch`
+*Renaming Files* : The `mv` command rename a file. If the destination for the `mv` command is a directory, the file is moved to the directory specified. The name of the file only changes if a destination file name is also specified.
 
-```bash
-touch filename
+<img width="620" height="164" alt="Screenshot from 2026-10-05 23-53-42" src="https://github.com/user-attachments/assets/eb828623-d5b8-4dbc-be6d-9f9ab662357d" />
+
+I also learned that when using `mv` command, if a destination directory is not specified, the file is renamed using the destination file name and remains in the source directory. 
+
+<img width="610" height="113" alt="Screenshot from 2026-10-05 23-58-08" src="https://github.com/user-attachments/assets/61a0b48f-98da-487a-b983-dc6fb6383588" />
+
+*Additional Move Options* : the `mv` command provides the following options:
+-`i` - Interactive: Ask if a file is to be overwritten.
+-`n` -	No Clobber: Do not overwrite a destination file's contents.
+-`v` - Verbose: Show the resulting move.
+
+### 6. Creating and Removing Files
+I learned that the `touch` command is used to create a file.
+
+<img width="608" height="61" alt="Screenshot from 2026-10-06 00-05-18" src="https://github.com/user-attachments/assets/f7524474-3985-4d0c-b396-05eb87e4cef3" />
+
+I also learned that the `rm` command is used to delete a file.As a precaution, it is important to use the `-i` option when deleting multiple files.
+
+<img width="611" height="202" alt="Screenshot from 2026-10-06 00-09-51" src="https://github.com/user-attachments/assets/e7aa8754-3990-4b60-bdda-984bf38df4ab" />
+
+### 6. Removing Directories
+
+
+
 ```
 
-The `touch` command is used to create a file.
+
 
 ### `rm`
 
@@ -168,15 +189,11 @@ rm filename
 
 The `rm` command removes a file.
 
-### Evidence
-
-**Screenshot 8 – File management commands**
-
-*[Insert the relevant presentation screenshot here.]*
-
 ### What I Learned
 
 I learned that many normal file-management tasks can be performed directly from the terminal. I also learned that commands such as `rm` need to be used carefully because they remove files.
+
+
 
 ---
 
@@ -208,11 +225,6 @@ rm -r directory_name
 
 The `-r` option allows `rm` to remove directories and their contents recursively.
 
-### Evidence
-
-**Screenshot 9 – Creating and removing directories**
-
-*[Insert the relevant presentation screenshot here.]*
 
 ### What I Learned
 
