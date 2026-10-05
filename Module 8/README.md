@@ -125,6 +125,8 @@ To answer n to each prompt automatically, use the `-n` option. It stands for no 
 
 <img width="642" height="135" alt="Screenshot from 2026-10-05 23-36-28" src="https://github.com/user-attachments/assets/12ab5c92-e4cb-4b7e-ae3f-c8a5a1d553e1" />
 
+---
+
 ### 4. Copying Directories
 
 I learned that the recursive `-r` option allows the `cp` command to copy both files and directories. The structure is:
@@ -173,59 +175,28 @@ I also learned that the `rm` command is used to delete a file.As a precaution, i
 
 <img width="611" height="202" alt="Screenshot from 2026-10-06 00-09-51" src="https://github.com/user-attachments/assets/e7aa8754-3990-4b60-bdda-984bf38df4ab" />
 
-### 6. Removing Directories
-
-
-
-```
-
-
-
-### `rm`
-
-```bash
-rm filename
-```
-
-The `rm` command removes a file.
-
 ### What I Learned
 
 I learned that many normal file-management tasks can be performed directly from the terminal. I also learned that commands such as `rm` need to be used carefully because they remove files.
 
-
-
 ---
 
-### 4. Creating and Removing Directories
+### 7. Creating and Removing Directories
 
-I learned how to create and remove directories.
+*Create a directory* : The `mkdir` command creates a directory.
 
-### Creating a directory
+<img width="615" height="185" alt="Screenshot from 2026-10-06 00-17-32" src="https://github.com/user-attachments/assets/0ab8a2c1-23da-4e83-b35f-6ad6fcb1a641" />
 
-```bash
-mkdir directory_name
-```
+*Delete a directory* : The `-r` recursive option allows `rm` command to remove directory.
 
-The `mkdir` command creates a directory.
+<img width="610" height="129" alt="Screenshot from 2026-10-06 00-24-45" src="https://github.com/user-attachments/assets/b146c118-5cb7-44f9-a6ce-3f26e7a57b91" />
 
-### Removing an empty directory
+*Delete an empty directory* : The `rmdir` command deletes an emoty directory.
 
-```bash
-rmdir directory_name
-```
-
-The `rmdir` command removes an empty directory.
-
-### Removing a directory recursively
-
-```bash
-rm -r directory_name
-```
-
-The `-r` option allows `rm` to remove directories and their contents recursively.
-
+<img width="610" height="43" alt="Screenshot from 2026-10-06 00-25-03" src="https://github.com/user-attachments/assets/1d5e06a7-9eea-4471-998e-0389105cdfbb" />
 
 ### What I Learned
 
 I learned that files and directories have different commands and options for managing them. I also learned that recursive operations need to be used carefully because they can affect everything inside a directory.
+
+I also learned that when a user deletes a directory, all of the files and sub directories are deleted without any interactive question. It is best to use the `-i` option with the `rm` command.
