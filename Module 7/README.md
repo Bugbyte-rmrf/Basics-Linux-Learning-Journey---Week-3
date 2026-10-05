@@ -4,8 +4,6 @@ This module exercise was focused on learning how to work with the Linux operatin
 
 The main objective was to understand how the Linux filesystem is organized and how files, directories, and text can be managed using command-line commands. I worked through different Linux commands and observed their output directly in the terminal.
 
-The practical covered filesystem navigation, file and directory management, file viewing, archiving and compression, sorting and filtering information, input/output redirection, pipes, and regular expressions.
-
 The screenshots included in this README provide evidence of the commands I used and the results I obtained while completing the exercise.
 
 ---
