@@ -6,7 +6,7 @@ The screenshots included in this README provide evidence of the commands I used 
 
 ---
 
-###1. Archiving and Compression
+### 1. Archiving and Compression
 
 I learned the difference between **archiving** and **compression**: 
 - *File archiving* -  When one or more files need to be transmitted or stored as efficiently as possible. 
