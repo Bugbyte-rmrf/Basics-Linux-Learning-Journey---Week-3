@@ -14,7 +14,7 @@ I learned the difference between **archiving** and **compression**:
 - *Compression* - Makes the files smaller by removing redundant information.
 - *Un-archiving* - When an archive is decompressed, and one or more files are extracted.
 
-## Benefits of archiving and compression
+#### Benefits of archiving and compression
 When making a large number of files available, such as the source code to an application or a collection of documents, it is easier for people to download a compressed archive than it is to download files individually.
 Log files have a habit of filling disks, so it is helpful to split them by date and compress older versions.
 When backing up directories, it is easier to keep them all in one archive than it is to version (update) each file.
