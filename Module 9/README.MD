@@ -6,7 +6,7 @@ The screenshots included in this README provide evidence of the commands I used 
 
 ---
 
-### 1. Archiving and Compression
+### 1. Introduction - Archiving and Compression
 
 I learned the difference between **archiving** and **compression**: 
 - *File archiving* -  When one or more files need to be transmitted or stored as efficiently as possible. 
@@ -17,14 +17,41 @@ I learned the difference between **archiving** and **compression**:
 ### Benefits of archiving and compression
 1. When making a large number of files available, such as the source code to an application or a collection of documents, it is easier for people to download a compressed archive than it is to download files individually.
 2. Log files have a habit of filling disks, so it is helpful to split them by date and compress older versions.
-When backing up directories, it is easier to keep them all in one archive than it is to version (update) each file.
-Some streaming devices such as tapes perform better if you’re sending a stream of data rather than individual files.
-It can often be faster to compress a file before sending it to a tape drive or over a slower network and decompress it at the other end than it would be to send it uncompressed.
+3. When backing up directories, it is easier to keep them all in one archive than it is to version (update) each file.
+4.Some streaming devices such as tapes perform better if you’re sending a stream of data rather than individual files.
+5. It can often be faster to compress a file before sending it to a tape drive or over a slower network and decompress it at the other end than it would be to send it uncompressed.
+
+### 1. Compression Files
+**Compression algorithm** - A procedure the computer uses to encode the original file, and as a result, make it smaller.
 
 I also learned about two types of compression:
 
-- **Lossless compression** – information is not removed and the original data can be recovered exactly.
-- **Lossy compression** – some information is removed, which can result in a smaller file.
+- **Lossless compression** – No information is removed from the file. Compressing a file and decompressing it leaves something identical to the original.GIFs and PNGs are compressed but lossless. 
+- **Lossy compression** – Information might be removed from the file. It is compressed in such a way that uncompressing a file will result in a file that is slightly different from the original.JPEGs use lossy compression
+
+### Commands Used in Compressing Files
+`gzip` command compress a file with the name of the file as the only argument. 
+After that command completes, the original file is gone, and a compressed version with a file extension of .gz is left in its place.
+Using `l` option with `gzip` command provides a reduction percentage
+
+
+
+Compressed files can be restored to their original form using `gunzip` command or the `gzip –d` command. This process is called **decompression**. 
+
+
+*Other Commmands Identical to `gzip` and `gunzip`
+1.The `gzip` command uses the **Lempel-Ziv** data compression algorithm, while the `bzip` utilities use a different compression algorithm called **Burrows-Wheeler** block sorting, which can compress files smaller than `gzip` at the expense of more CPU time. These files can be recognized because they have a `.bz` or `.bz2` extension instead of a .gz extension.
+
+2. The `xz` and `unxz` tools are functionally similar to `gzip` and `gunzip` in that they use the **Lempel-Ziv-Markov (LZMA)** chain algorithm, which can result in lower decompression CPU times that are on par with `gzip` while providing the better compression ratios typically associated with the `bzip2` tools. Files compressed with the `xz` command use the `.xz` extension.
+
+
+bzip2 and bunzip2, as well as xz and unxz
+
+
+
+
+
+
 
 ### Evidence
 
@@ -35,6 +62,9 @@ I also learned about two types of compression:
 ### What I Learned
 
 Before this practical, I could easily think of archiving and compression as the same thing. I learned that they have different purposes: archiving is about combining files, while compression is about reducing their size.
+
+With lossless compression, this multiple compression is not a problem, but if you compress and decompress a file several times using a lossy algorithm, you will eventually have something that is unrecognizable.
+
 
 ---
 
