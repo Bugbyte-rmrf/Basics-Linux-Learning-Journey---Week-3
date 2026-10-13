@@ -35,6 +35,8 @@ After that command completes, the original file is gone, and a compressed versio
 Using `l` option with `gzip` command provides a reduction percentage
 
 
+
+
 Compressed files can be restored to their original form using `gunzip` command or the `gzip –d` command. This process is called **decompression**. 
 
 
@@ -44,8 +46,6 @@ Compressed files can be restored to their original form using `gunzip` command o
 
 2. The `xz` and `unxz` tools are functionally similar to `gzip` and `gunzip` in that they use the **Lempel-Ziv-Markov (LZMA)** chain algorithm, which can result in lower decompression CPU times that are on par with `gzip` while providing the better compression ratios typically associated with the `bzip2` tools. Files compressed with the `xz` command use the `.xz` extension.
 
-
-bzip2 and bunzip2, as well as xz and unxz
 
 
 
