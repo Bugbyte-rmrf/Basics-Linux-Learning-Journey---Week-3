@@ -69,7 +69,9 @@ Creating an archive with the `tar` command requires two named options: `tar -c [
 - `-c` - Create an archive.
 - `-f ARCHIVE` - Use archive file. The argument `ARCHIVE` will be the name of the resulting archive file.
 
+
 <img width="516" height="47" alt="Image" src="https://github.com/user-attachments/assets/f54e7ba4-3826-49e1-b267-7af9120f4ba9" />
+
 
 **Commands Used in Create Mode**
  I learned that tarballs can be compressed for easier transport, either by using `gzip` on the archive or by having `tar` do it with the `-z` option.
