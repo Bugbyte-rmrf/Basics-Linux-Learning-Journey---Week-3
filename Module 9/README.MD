@@ -32,7 +32,7 @@ I also learned about two types of compression:
 ### Commands Used in Compressing Files
 `gzip` command compress a file with the name of the file as the only argument. 
 After that command completes, the original file is gone, and a compressed version with a file extension of .gz is left in its place.
-Using `l` option with `gzip` command provides a reduction percentage
+Using `l` option with `gzip` command provides a reduction percentage. 
 
 
 
