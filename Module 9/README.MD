@@ -21,7 +21,7 @@ I learned the difference between **archiving** and **compression**:
 4.Some streaming devices such as tapes perform better if you’re sending a stream of data rather than individual files.
 5. It can often be faster to compress a file before sending it to a tape drive or over a slower network and decompress it at the other end than it would be to send it uncompressed.
 
-### 1. Compression Files
+### 2. Compression Files
 **Compression algorithm** - A procedure the computer uses to encode the original file, and as a result, make it smaller.
 
 I also learned about two types of compression:
@@ -53,7 +53,7 @@ With lossless compression, this multiple compression is not a problem, but if yo
 
 ---
 
-### Archiving Files
+### 3. Archiving Files
 The traditional UNIX utility to archive files is called `tar`, which is a short form of **TApe aRchive**. 
 
 I learned that it was used to stream many files to a tape for backups or file transfer. 
@@ -66,12 +66,11 @@ The `tar` command takes in several files and creates a single output file that c
 I learned that the Create mode make a new archive out of a series of files.
 
 Creating an archive with the `tar` command requires two named options: `tar -c [-f ARCHIVE] [OPTIONS] [FILE...]`
+
 - `-c` - Create an archive.
 - `-f ARCHIVE` - Use archive file. The argument `ARCHIVE` will be the name of the resulting archive file.
 
-
 <img width="516" height="47" alt="Image" src="https://github.com/user-attachments/assets/f54e7ba4-3826-49e1-b267-7af9120f4ba9" />
-
 
 **Commands Used in Create Mode**
  I learned that tarballs can be compressed for easier transport, either by using `gzip` on the archive or by having `tar` do it with the `-z` option.
@@ -90,9 +89,8 @@ I also learned that `bzip2` compression can be used instead of `gzip `by substit
 
 <img width="613" height="23" alt="Image" src="https://github.com/user-attachments/assets/cadf1b1c-cef4-4ff2-8ef0-6a228c0d6938" />
 
-2. List
- I learned that the List mode show the contents of the archive without extracting: 
-
+**2. List Mode**
+ I learned that the List mode show the contents of the archive without extracting
 
 Given a `tar` archive, compressed or not, you can see what’s in it by using the `-t` option : `tar -t [-f ARCHIVE] [OPTIONS]`
 
@@ -100,45 +98,55 @@ Given a `tar` archive, compressed or not, you can see what’s in it by using th
 - `-j` - Decompress with an `bzip2` command.
 - `-f ARCHIVE` - Operate on the given archive.
 
+<img width="646" height="154" alt="Image" src="https://github.com/user-attachments/assets/1f77e177-4689-414e-b2d0-50cac6f38d73" />
 
-```bash
-tar -t
-```
+**2. Extract Mode**
+I learned that the Extract Mode pull one or more files out of an archive:
 
-Displays the contents of an archive without extracting it.
+I also learned that you can extract the archive with the `–x` option once it’s copied into a different directory: `tar -x [-f ARCHIVE] [OPTIONS]`
 
-### Extract
-Extract: Pull one or more files out of an archive.
+- `-x` - Extract files from an archive.
+- `-j` - Decompress with the `bzip2` command.
+- `-f ARCHIVE` - Operate on the given archive.
 
-```bash
-tar -x
-```
+<img width="650" height="267" alt="Image" src="https://github.com/user-attachments/assets/d5997500-a978-442c-9f9d-15dec3e729a1" />
 
-Extracts files from an archive.
+I also learned that adding the `–v` flag, it gives a verbose output of the files processed, making it easier to keep track of what's happening.
 
-### Evidence
+`-v` - Verbosely list the files processed.
 
-**Screenshot 12 – tar command**
+<img width="646" height="156" alt="Image" src="https://github.com/user-attachments/assets/b022218b-4bcb-44ac-9cd1-392c9110665b" />
 
-*[Insert the relevant presentation screenshot here.]*
+ I also learned that If you only want some files out of the archive, add their names to the end of the command, but by default, they must match the name in the archive exactly, or use a pattern.
+
+<img width="615" height="39" alt="Image" src="https://github.com/user-attachments/assets/3fce9920-071d-438e-97de-cdf16427b58b" />
 
 ### What I Learned
 
 I learned that `tar` is useful for combining multiple files into a single archive that can later be opened and separated back into its original files.
-a tar file, also called a tarball, being created from multiple files.
+
+I also learned that a **tar file**, also called a **tarball** created from multiple files.
+
 Normally, tarball files are slightly larger than the combined input files due to the overhead information on recreating the original files. 
 
 ---
 
-# 13. ZIP and UNZIP
+### 4. ZIP Files
+I learned that in Linux, ZIP is well supported by the `zip` and `unzip` commands. 
+
+The default mode of `zip` is to add files to an archive and compress it: `zip [OPTIONS] [zipfile [file…]]`
+- `zipfile` -  The name of the archive to be created, after that, a list of files to be added. 
+
+<img width="645" height="135" alt="Image" src="https://github.com/user-attachments/assets/c5fad79b-08f5-41f4-868a-389eacd4d472" />
+
+The `zip` command will not recurse into subdirectories by default, which is different behavior than the `tar` command. One must use the `–r` option to indicate recursion is to be used.
+
+<img width="644" height="160" alt="Image" src="https://github.com/user-attachments/assets/24802e1d-82fc-4f2b-a3ec-049cee9e9c40" />
+
+
+
 
 I also learned about ZIP files.
-
-```bash
-zip
-```
-
-is used to add files to an archive and compress them.
 
 ```bash
 zip -r
@@ -157,12 +165,6 @@ To list the contents without extracting:
 ```bash
 unzip -l
 ```
-
-### Evidence
-
-**Screenshot 13 – ZIP and UNZIP commands**
-
-*[Insert the relevant presentation screenshot here.]*
 
 ### What I Learned
 
