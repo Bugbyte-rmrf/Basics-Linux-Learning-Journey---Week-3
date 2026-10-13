@@ -34,7 +34,6 @@ I also learned about two types of compression:
 After that command completes, the original file is gone, and a compressed version with a file extension of .gz is left in its place.
 Using `l` option with `gzip` command provides a reduction percentage
 
-file:///home/lm/Pictures/Screenshots/Screenshot%20from%202026-10-13%2021-43-27.png
 
 
 Compressed files can be restored to their original form using `gunzip` command or the `gzip –d` command. This process is called **decompression**. 
