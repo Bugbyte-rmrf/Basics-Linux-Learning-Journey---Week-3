@@ -61,7 +61,8 @@ I learned that it was used to stream many files to a tape for backups or file tr
 The `tar` command takes in several files and creates a single output file that can be split up again into the original files on the other end of the transmission.
 
 ### Modes under `tar` Command
-1. Create Mode
+**1. Create Mode**
+
 I learned that the Create mode make a new archive out of a series of files.
 
 Creating an archive with the `tar` command requires two named options: `tar -c [-f ARCHIVE] [OPTIONS] [FILE...]`
