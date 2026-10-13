@@ -132,10 +132,13 @@ Normally, tarball files are slightly larger than the combined input files due to
 ---
 
 ### 4. ZIP Files
+
+### a) `zip` Command
 I learned that in Linux, ZIP is well supported by the `zip` and `unzip` commands. 
 
 The default mode of `zip` is to add files to an archive and compress it: `zip [OPTIONS] [zipfile [file…]]`
-- `zipfile` -  The name of the archive to be created, after that, a list of files to be added. 
+
+`zipfile` -  The name of the archive to be created, after that, a list of files to be added. 
 
 <img width="645" height="135" alt="Image" src="https://github.com/user-attachments/assets/c5fad79b-08f5-41f4-868a-389eacd4d472" />
 
@@ -143,29 +146,25 @@ The `zip` command will not recurse into subdirectories by default, which is diff
 
 <img width="644" height="160" alt="Image" src="https://github.com/user-attachments/assets/24802e1d-82fc-4f2b-a3ec-049cee9e9c40" />
 
+### b) `unzip` Command
+I also learned that The `–l` list option of the `unzip` command lists files in .zip archives:
 
+<img width="650" height="252" alt="Image" src="https://github.com/user-attachments/assets/4266946a-eff2-4405-85ac-ae6035ce152c" />
 
+Extracting the files is just like creating the archive, as the default operation of the `unzip` command is to extract. 
 
-I also learned about ZIP files.
+<img width="650" height="252" alt="Image" src="https://github.com/user-attachments/assets/f1d06f33-e370-4c43-ac33-74e5ecb6ca48" />
 
-```bash
-zip -r
+I also noted that the above can be avoided by copying the zip file into a new directory:
+
+<img width="649" height="179" alt="Image" src="https://github.com/user-attachments/assets/e1c5e442-6d1a-46ef-abd7-ee980f26282a" />
+
+I also learned that just like `tar`, one can pass filenames on the command line. Below are three different attempts to extract a file:
+- Just the name of the file is passed without the directory component.
+- Second attempt passes the directory component along with the file name, which extracts just that file.
+- Third version uses a wildcard, which extracts the four files matching the pattern, just like tar.
+
+<img width="614" height="205" alt="Image" src="https://github.com/user-attachments/assets/fb447f81-bcd1-4502-9f04-a06b0438bfbe" />
+
 ```
 
-allows directories and their contents to be included recursively.
-
-To extract an archive:
-
-```bash
-unzip
-```
-
-To list the contents without extracting:
-
-```bash
-unzip -l
-```
-
-### What I Learned
-
-I learned another method of creating compressed archives and how to inspect and extract their contents.
