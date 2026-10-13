@@ -76,15 +76,17 @@ Creating an archive with the `tar` command requires two named options:
 
 `z` compress (or decompress) an archive using the gzip command.
 
+<img width="516" height="47" alt="Image" src="https://github.com/user-attachments/assets/1435461b-38f6-4951-a96e-140b0f416b92" />
+
 The output is much smaller than the tarball itself, and the resulting file is compatible with `gzip`, which can be used to view the compression details. 
 
-<img width="516" height="47" alt="Image" src="https://github.com/user-attachments/assets/1435461b-38f6-4951-a96e-140b0f416b92" />
+<img width="516" height="47" alt="Image" src="https://github.com/user-attachments/assets/58097a5c-7449-4a8b-9a31-8a282237bf12" />
 
 I also learned that `bzip2` compression can be used instead of `gzip `by substituting the `-j` option for the `-z` option and using `.tar.bz2`, `.tbz`, or `.tbz2` as the file extension.
 
 `-j` Compress (or decompress) an archive using the `bzip2` command.
 
-<img width="516" height="47" alt="Image" src="https://github.com/user-attachments/assets/58097a5c-7449-4a8b-9a31-8a282237bf12" />
+
 
 
 ```bash
