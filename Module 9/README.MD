@@ -34,10 +34,11 @@ I also learned about two types of compression:
 After that command completes, the original file is gone, and a compressed version with a file extension of .gz is left in its place.
 Using `l` option with `gzip` command provides a reduction percentage. 
 
-
+<img width="643" height="172" alt="Image" src="https://github.com/user-attachments/assets/111c6941-26d3-4f46-a849-bd1f5f76007d" />
 
 Compressed files can be restored to their original form using `gunzip` command or the `gzip –d` command. This process is called **decompression**. 
 
+<img width="613" height="55" alt="Image" src="https://github.com/user-attachments/assets/70775100-78c2-4228-902a-e3158fdf29fd" />
 
 ### Other Commmands Identical to `gzip` and `gunzip`
 
@@ -45,55 +46,46 @@ Compressed files can be restored to their original form using `gunzip` command o
 
 2. The `xz` and `unxz` tools are functionally similar to `gzip` and `gunzip` in that they use the **Lempel-Ziv-Markov (LZMA)** chain algorithm, which can result in lower decompression CPU times that are on par with `gzip` while providing the better compression ratios typically associated with the `bzip2` tools. Files compressed with the `xz` command use the `.xz` extension.
 
-
-
-
-
-
-
-
-### Evidence
-
-**Screenshot 10 – Archiving and compression concepts**
-
-*[Insert the relevant presentation screenshot here.]*
-
 ### What I Learned
-
-Before this practical, I could easily think of archiving and compression as the same thing. I learned that they have different purposes: archiving is about combining files, while compression is about reducing their size.
+Compressing an already compressed file will not make it smaller. This fact is often forgotten when it comes to images since they are already stored in a compressed format.
 
 With lossless compression, this multiple compression is not a problem, but if you compress and decompress a file several times using a lossy algorithm, you will eventually have something that is unrecognizable.
 
-
 ---
 
-# 11. gzip and gunzip
+### Archiving Files
+The traditional UNIX utility to archive files is called `tar`, which is a short form of **TApe aRchive**. 
 
-I learned about gzip compression.
+I learned that it was used to stream many files to a tape for backups or file transfer. 
 
-`gzip` compresses a file and produces a `.gz` file.
+The `tar` command takes in several files and creates a single output file that can be split up again into the original files on the other end of the transmission.
 
-`gunzip` is used to decompress a compressed file and restore it.
+### Modes under `tar` Command
+1. Create Mode
+I learned that the Create mode make a new archive out of a series of files.
 
-### Evidence
+Creating an archive with the `tar` command requires two named options:
+`tar -c [-f ARCHIVE] [OPTIONS] [FILE...]`
+ - `-c` - Create an archive.
+- `-f ARCHIVE` - Use archive file. The argument `ARCHIVE` will be the name of the resulting archive file.
 
-**Screenshot 11 – gzip and gunzip**
+<img width="516" height="47" alt="Image" src="https://github.com/user-attachments/assets/f54e7ba4-3826-49e1-b267-7af9120f4ba9" />
 
-*[Insert the relevant presentation screenshot here.]*
+**Commands Used in Create Mode**
+ I learned that tarballs can be compressed for easier transport, either by using `gzip` on the archive or by having `tar` do it with the `-z` option.
 
-### What I Learned
+`z` compress (or decompress) an archive using the gzip command.
 
-I learned that Linux provides command-line tools for reducing file sizes and restoring compressed files.
+The output is much smaller than the tarball itself, and the resulting file is compatible with `gzip`, which can be used to view the compression details. 
 
----
+<img width="516" height="47" alt="Image" src="https://github.com/user-attachments/assets/1435461b-38f6-4951-a96e-140b0f416b92" />
 
-# 12. tar Archives
+I also learned that `bzip2` compression can be used instead of `gzip `by substituting the `-j` option for the `-z` option and using `.tar.bz2`, `.tbz`, or `.tbz2` as the file extension.
 
-I learned how the `tar` command is used to create, list, and extract archives.
+`-j` Compress (or decompress) an archive using the `bzip2` command.
 
-The three main modes covered were:
+<img width="516" height="47" alt="Image" src="https://github.com/user-attachments/assets/58097a5c-7449-4a8b-9a31-8a282237bf12" />
 
-### Create
 
 ```bash
 tar -c
@@ -102,6 +94,7 @@ tar -c
 Creates an archive.
 
 ### List
+List: Show the contents of the archive without extracting.
 
 ```bash
 tar -t
@@ -110,6 +103,7 @@ tar -t
 Displays the contents of an archive without extracting it.
 
 ### Extract
+Extract: Pull one or more files out of an archive.
 
 ```bash
 tar -x
@@ -126,6 +120,8 @@ Extracts files from an archive.
 ### What I Learned
 
 I learned that `tar` is useful for combining multiple files into a single archive that can later be opened and separated back into its original files.
+a tar file, also called a tarball, being created from multiple files.
+Normally, tarball files are slightly larger than the combined input files due to the overhead information on recreating the original files. 
 
 ---
 
