@@ -64,9 +64,8 @@ The `tar` command takes in several files and creates a single output file that c
 1. Create Mode
 I learned that the Create mode make a new archive out of a series of files.
 
-Creating an archive with the `tar` command requires two named options:
-`tar -c [-f ARCHIVE] [OPTIONS] [FILE...]`
- - `-c` - Create an archive.
+Creating an archive with the `tar` command requires two named options: `tar -c [-f ARCHIVE] [OPTIONS] [FILE...]`
+- `-c` - Create an archive.
 - `-f ARCHIVE` - Use archive file. The argument `ARCHIVE` will be the name of the resulting archive file.
 
 <img width="516" height="47" alt="Image" src="https://github.com/user-attachments/assets/f54e7ba4-3826-49e1-b267-7af9120f4ba9" />
@@ -86,17 +85,18 @@ I also learned that `bzip2` compression can be used instead of `gzip `by substit
 
 `-j` Compress (or decompress) an archive using the `bzip2` command.
 
+<img width="613" height="23" alt="Image" src="https://github.com/user-attachments/assets/cadf1b1c-cef4-4ff2-8ef0-6a228c0d6938" />
+
+2. List
+ I learned that the List mode show the contents of the archive without extracting: 
 
 
+Given a `tar` archive, compressed or not, you can see what’s in it by using the `-t` option : `tar -t [-f ARCHIVE] [OPTIONS]`
 
-```bash
-tar -c
-```
+- `-t` - List the files in an archive.
+- `-j` - Decompress with an `bzip2` command.
+- `-f ARCHIVE` - Operate on the given archive.
 
-Creates an archive.
-
-### List
-List: Show the contents of the archive without extracting.
 
 ```bash
 tar -t
