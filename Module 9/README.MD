@@ -166,5 +166,8 @@ I also learned that just like `tar`, one can pass filenames on the command line.
 
 <img width="614" height="205" alt="Image" src="https://github.com/user-attachments/assets/fb447f81-bcd1-4502-9f04-a06b0438bfbe" />
 
+### What I Learned
+ I learned that `zip` and `unzip` man pages describe further details on these tools, such as replace files within the archive, use different compression levels, and even use encryption.
+
 ```
 
