@@ -1,13 +1,6 @@
-
 ## Introduction
 
-This module exercise was focused on learning how to work with the Linux operating system through the Command Line Interface (CLI).
-
-The main objective was to understand how the Linux filesystem is organized and how files, directories, and text can be managed using command-line commands. I worked through different Linux commands and observed their output directly in the terminal.
-
-The practical covered managing files and directories, copying files and directories, moving files, renaming files, creating files, removing files, removing directories and creating directories
-
-filesystem navigation, file and directory management, file viewing, archiving and compression, sorting and filtering information, input/output redirection, pipes, and regular expressions.
+The module covered viewing files in the terminal, viewing files using a pager, command line pipes, input/output redirection, sorting files or input, viewing file statistics, filter file sections & contents and basic regular expressions.
 
 The screenshots included in this README provide evidence of the commands I used and the results I obtained while completing the exercise.
 
